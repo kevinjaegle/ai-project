@@ -1,0 +1,12 @@
+# Python / Env / Cache
+.venv/
+__pycache__/
+*.pyc
+
+# Env-Dateien & Logfiles
+.env
+*.log
+
+# Modelle / Daten (lokal behalten, nicht committen - nach Bedarf anpassen)
+model/
+data/

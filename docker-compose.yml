@@ -1,0 +1,13 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ai-app:latest
+    ports:
+      - "8000:8000"
+    environment:
+      APP_PORT: "8000"
+      LOG_LEVEL: "INFO"
+      MODEL_PATH: "model.joblib"
+    restart: unless-stopped
