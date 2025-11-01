@@ -57,10 +57,16 @@ python -m venv .venv
 pip install -r requirements.txt
 
 # 3) (Optional) Daten vorbereiten
-# python src/ml/data_prep.py  # erzeugt train.csv/test.csv
+# python src/ml/data_prep.py          # erzeugt train.csv/test.csv
+# # oder in Python:
+# # from src.ml import data_prep
+# # data_prep.run()
 
 # 4) Modell trainieren
-python src/ml/train.py        # erzeugt model.joblib
+python src/ml/train.py               # erzeugt model.joblib
+# # oder in Python:
+# # from src.ml import train
+# # train.run()
 
 # 5) API starten (Entwicklung)
 uvicorn src.app.main:app --reload --port 8000
