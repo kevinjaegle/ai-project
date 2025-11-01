@@ -7,4 +7,5 @@ scikit-learn
 joblib
 python-dotenv
 httpx
+requests
 pytest
